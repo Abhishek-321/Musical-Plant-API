@@ -1,0 +1,44 @@
+*{
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body #header {
+    display: flex; 
+    justify-content: center;
+    vertical-align: center; 
+    padding-top: 30px; 
+    background-color:#1d2d50; 
+    color: rgb(238, 238, 238); 
+    height: 20vh; 
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    padding: 10px 20px; 
+    font-size: 25px; 
+    background: #fcdab7; 
+    border: none; 
+    border-radius: 10px; 
+
+}
+
+body{
+    background: #1e5f74;
+}
+
+#btnContainer{
+    padding: 20px; 
+    padding-top: 50px; 
+    display: flex; 
+    justify-content: center;
+}
+
+#text{
+    display: flex; 
+    justify-content: center;
+    color: rgb(211, 211, 211); 
+    padding-top: 50px; 
+}
