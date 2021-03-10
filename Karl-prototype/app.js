@@ -29,7 +29,7 @@ function play(){
     updateBPM()
 
     if(stop==false){
-        // Tone.Transport.start()
+        Tone.Transport.start()
         console.log(stop);
         Tone.Transport.bpm.value = updateBPM;
         stop = true
