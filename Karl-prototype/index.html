@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.10/Tone.js "></script>
+    <link rel="stylesheet" href="/Musical-Plant-API/Karl-prototype/style.css">
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">Play</button>
+    <h1 style="text-align: center;">From single note to rapid vibrato</h1>
+    <div class="position">
+        <button id="play-btn" style="display: inline;">Play</button>
+        <a href="./index.html">
+            <button id="stop-btn">Stop</button>
+        </a>
+        <hr>
+        <input type="range" min="1" max="1000" value="1" class="slider" id="myRange">
+        
+        <p>Value: <span id="demo"></span></p>
+    </div>
     
-    <script src="/app.js"></script>
+    <hr>
+    
+    <h1 style="text-align: center;">From single note to major C</h1>
+    <div class="position">
+        <button id="play-btn2" style="display: inline;">Turn On</button>
+        <a href="./index.html">
+            <button>Reset</button>
+        </a>
+        <hr>
+        <input type="range" min="1" max="100" value="1" class="slider" id="myRange2">
+        
+        <p>Value: <span id="demo2"></span></p>
+    </div>
+    
+
+    <script src="./main.js"></script>
+    <script src="./chord.js"></script>
 </body>
 </html>

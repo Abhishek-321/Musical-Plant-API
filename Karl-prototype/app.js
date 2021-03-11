@@ -1,42 +1,49 @@
-console.clear();
-
 const playBtn = document.getElementById('btn')
 
-
-const synth = new Tone.Synth();
-synth.oscillator.type = 'sine';
-const gain = new Tone.Gain(0.1);
-gain.toMaster();
-synth.connect(gain);
-
-// synth.triggerAttackRelease('C4', '8n');
-
-const notes = [
-    'C4', 'E4', 'G4',
-    'C5', 'E5', 'G5'
-];
-
-var index = 0;
-
-Tone.Transport.scheduleRepeat(time => {
-    repeat(time)
-}, '8n');
-
-console.log(Tone.Transport.bpm.valu);
-Tone.Transport.bpm.value = 90;
-
-function repeat(time) {
-    let note = notes[index % notes.length];
-    synth.triggerAttackRelease(note, '8n', time);
-    index++;
+var slider = document.getElementById('myRange');
+var output = document.getElementById('demo');
+output.innerHTML = slider.value;
+slider.oninput = function() {
+    output.innerHTML = this.value;
 }
 
-playBtn.addEventListener('click', function() {
+
+const synthA = new Tone.FMSynth().toDestination();
+const synthB = new Tone.AMSynth().toDestination();
+
+const loopA = new Tone.Loop(time => {
+    synthA.triggerAttackRelease("C2", "8n", time);
+}, "4n").start(0);
+
+const loopB = new Tone.Loop(time => {
+    synthB.triggerAttackRelease("C4", "8n", time);
+}, "4n").start("8n");
+
+playBtn.addEventListener('click', play)  
+
+
+
+let stop = Boolean(false)
+
+function play(){
+    updateBPM()
+
+    if(stop==false){
+        Tone.Transport.start()
+        console.log(stop);
+        Tone.Transport.bpm.value = updateBPM;
+        stop = true
+    }
+    else{
+        Tone.Transport.stop()
+    }
     
-    Tone.Transport.start();
+}
+function updateBPM(){
+    while (stop == false) {
+        let bpms = slider.value;
+        console.log(slider.value);
+        return bpms
+    }
     
-    setTimeout(() => {
-        Tone.Transport.stop();
-    }, 1000)
-    
-})
+} 
