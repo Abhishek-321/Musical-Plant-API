@@ -8,11 +8,16 @@
  The project is useful as it solves the problem of people forgetting their plants and knowing how much to water too. 
 
 
- # How can users get Started with Project and use the code?
+ # Getting started
  To get started with the project, you need to download the folders and open index.html in a webbrowser. If further steps are required, it will be presented in each README.md. If you want to tweak the project, use a visual studio code to alter the code. 
 
 
- # This repository is maintained and cotribution are made by following persons. 
+All the works here are based on getting started examples from https://tonejs.github.io/. 
+
+
+ # This repository is maintained and cotributions are made by following people. 
  1. Abhishek Giri   
  2. Clarrise Duryee
  3. Karl-Fredrik Magawa Hagman
+
+ 
