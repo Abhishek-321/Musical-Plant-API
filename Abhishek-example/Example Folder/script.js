@@ -25,14 +25,14 @@ var note = ["A4", "C4", "D4", "E4", "G4"];
 
 var i = Math.floor(Math.random() *4); 
 
-//create a synth and connect it to the main output (your speakers)
+//create a synth 
 const synth = new Tone.Synth(); 
 
 //play a middle 'C' for the duration of an 8th note
 synth.triggerAttackRelease(note[i], "8n");
 console.log(note[i]); 
 
-
+//here the tone goes through effect before outputnig to speakier
 if(dryLevel==0){  
    var shift = new Tone.FrequencyShifter(100).toDestination(); 
    const cheby = new Tone.Chebyshev(50).toDestination();  
