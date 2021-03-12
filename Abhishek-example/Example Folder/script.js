@@ -1,3 +1,4 @@
+
 var dryLevel = 0;
 
 //get all the buttons
@@ -34,22 +35,22 @@ console.log(note[i]);
 
 //here the tone goes through effect before outputnig to speakier
 if(dryLevel==0){  
-   const vol = new Tone.Volume(-12).toDestination();
+   
    var shift = new Tone.FrequencyShifter(100).toDestination(); 
    const cheby = new Tone.Chebyshev(50).toDestination(); 
    const dist = new Tone.Distortion(2).toDestination(); 
    synth.connect(shift).connect(dist).connect(cheby);
-   synth.connect(vol); 
+
 } 
-else if (dryLevel == 1) {)
-   const vol = new Tone.Volume(-12).toDestination();
+else if (dryLevel == 1) {
+   
    var shift = new Tone.FrequencyShifter(22).toDestination(); 
-   synth.connect(shift).connect(vol); 
+   synth.connect(shift);
       
 } else {
-   const vol = new Tone.Volume(-12).toDestination();
+
    var shift = new Tone.FrequencyShifter(0).toDestination(); 
-   synth.connect(shift).connect(vol);   
+   synth.connect(shift); 
 }; 
 
 });
