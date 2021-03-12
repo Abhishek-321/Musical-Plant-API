@@ -12,7 +12,7 @@ Calathea plants are the hardest to kill. The only reason they die is because the
   
   
  # Getting started
- > To get started with the project, you need to download the folders and open index.html in a webbrowser. If further steps are required, it will be presented in each README.md. If you want to tweak the project, use a visual studio code to alter the code. 
+  To get started with the project, you need to download the folders and open index.html in a webbrowser. If further steps are required, it will be presented in each README.md. If you want to tweak the project, use a visual studio code to alter the code. 
  
  
  
@@ -27,7 +27,7 @@ YellowledPin = 10
 RedledPin = 11
 Peizo = 12
 
-Connect +positive LED pins to 220 ohm resistors (yes, one per LED, trust me.)
+> Connect +positive LED pins to 220 ohm resistors (yes, one per LED, trust me.)
 Connect pins 9 - 11 to LED +positive pin (longest pin) 
 Connect pin 12 to +positive peizo pin
 Connect ~GND to -Negative side of breadboard .
@@ -35,7 +35,7 @@ Connect all LED -negative pin (short pin) to ~GND
 Connect GND to other -negative side of breadboard 
 Connect resistor to -negative to -negative peizo pin. 
 
-SET ARDUINO TO READ *STANDARD FIRMATA PLUS* 
+  > SET ARDUINO TO READ *STANDARD FIRMATA PLUS* 
 
 ****
  
