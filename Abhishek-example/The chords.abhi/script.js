@@ -64,7 +64,7 @@ if(dryLevel==0){
 } else {
    
    const synth = new Tone.PolySynth()
-   const vol = new Tone.Volume(-12).toDestination();
+   const vol = new Tone.Volume(-20).toDestination();
    
    // set the attributes across all the voices using 'set'
    //synth.set({ detune: -1200 });

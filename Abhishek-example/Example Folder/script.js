@@ -34,19 +34,22 @@ console.log(note[i]);
 
 //here the tone goes through effect before outputnig to speakier
 if(dryLevel==0){  
+   const vol = new Tone.Volume(-12).toDestination();
    var shift = new Tone.FrequencyShifter(100).toDestination(); 
-   const cheby = new Tone.Chebyshev(50).toDestination();  
+   const cheby = new Tone.Chebyshev(50).toDestination(); 
    const dist = new Tone.Distortion(2).toDestination(); 
    synth.connect(shift).connect(dist).connect(cheby);
- 
+   synth.connect(vol); 
 } 
-else if (dryLevel == 1) {
+else if (dryLevel == 1) {)
+   const vol = new Tone.Volume(-12).toDestination();
    var shift = new Tone.FrequencyShifter(22).toDestination(); 
-   synth.connect(shift); 
+   synth.connect(shift).connect(vol); 
       
 } else {
+   const vol = new Tone.Volume(-12).toDestination();
    var shift = new Tone.FrequencyShifter(0).toDestination(); 
-   synth.connect(shift);   
+   synth.connect(shift).connect(vol);   
 }; 
 
 });
