@@ -6,21 +6,11 @@
 
  # Why is the project Useful?
 Our J5 soil sensor hybrid will allow us test from a distance, (users will not see lights, or colors) and ask users, with a plant in front of them if they understand which sound means what and explore how users would actually touch their plants. 
-**HUMIDITY DATA**
-GREEN   GOOD    
-YELLOW  DRY
-RED     WET
-
-CALATHEA PLANT HUMIDITY NUMBERS
-Calathea's optimal watering was: 
-DRY:  760 - 959           => IN THE CODE => Yellow
-OPTIMAL: 960 - 1015       => IN THE CODE => Green
-WET: 1001 - 1160          => IN THE CODE => Red
-
-These numbers will have to be adjusted for any plant. In theory, our design is to encourage users to water their plants a somewhat training practice for them with Calathea.
+  
+  In theory, our design is to encourage users to water their plants a somewhat training practice for them with Calathea.
 Calathea plants are the hardest to kill. The only reason they die is because they're not getting enough water. Our users are primarily bad waterers. Overwatering & Underwatering bad plant habits. 
-
-
+  
+  
  # Getting started
  > To get started with the project, you need to download the folders and open index.html in a webbrowser. If further steps are required, it will be presented in each README.md. If you want to tweak the project, use a visual studio code to alter the code. 
  
