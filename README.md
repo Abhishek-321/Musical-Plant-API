@@ -43,7 +43,7 @@ Connect resistor to -negative to -negative peizo pin.
 All the works here are based on getting started examples from https://tonejs.github.io/. as well as Arduino guides, and Adafruit Soil sensor API libraries. 
 
 
- # This repository is maintained and cotributions are made by following people. 
+ # This repository is maintained and contributions are made by following people. 
  1. Abhishek Giri   
  2. Clarisse Duryee
  3. Karl-Fredrik Magawa Hagman
