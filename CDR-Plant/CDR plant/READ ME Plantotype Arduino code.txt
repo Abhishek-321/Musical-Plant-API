@@ -1,0 +1,10 @@
+/****** imports libraries: Adafruit & pitches
+ *  
+ *  Made for Arduino, in order to understand component logic. 
+ *  This code imports 2 API libraries  
+ *   It uses Adafruit's soil sensor as well as Seesaw's library to use the soil sensor as a proximity touch device 
+ *   Making it possible to trigger sound when touching the plant.
+ *   //Threshhold for proximity touch (set data accordingly. Use Serial Monitor to see the default numbers, then touch the plant for that number*  
+ *
+ You must have the arduino plugged in with a simple Peizo setup. (220ohm resistor and set the + pin of the piezo to one of the digital pins.
+ /
